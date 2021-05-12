@@ -39,7 +39,7 @@ export default function Search() {
       <div className="card-list">
         {movies.filter(movie => movie.poster_path)
           .map((movie) => (
-            <div className="card--image" key={movie.id}>
+            <div className="card" key={movie.id}>
               <img
                 className="card --image"
                 src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`}
